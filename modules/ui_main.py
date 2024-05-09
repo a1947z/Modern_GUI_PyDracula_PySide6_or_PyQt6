@@ -662,6 +662,18 @@ class Ui_MainWindow(object):
         self.btn_home.setStyleSheet(u"background-image: url(:/icons/images/icons/cil-home.png);")
 
         self.verticalLayout_8.addWidget(self.btn_home)
+        
+        self.btn_chat = QPushButton(self.topMenu)
+        self.btn_chat.setObjectName(u"btn_chat")
+        sizePolicy.setHeightForWidth(self.btn_chat.sizePolicy().hasHeightForWidth())
+        self.btn_chat.setSizePolicy(sizePolicy)
+        self.btn_chat.setMinimumSize(QSize(0, 45))
+        self.btn_chat.setFont(font)
+        self.btn_chat.setCursor(QCursor(Qt.PointingHandCursor))
+        self.btn_chat.setLayoutDirection(Qt.LeftToRight)
+        self.btn_chat.setStyleSheet(u"background-image: url(:/icons/images/icons/cil-gamepad.png);")
+
+        self.verticalLayout_8.addWidget(self.btn_chat)
 
         self.btn_widgets = QPushButton(self.topMenu)
         self.btn_widgets.setObjectName(u"btn_widgets")
@@ -1543,6 +1555,8 @@ class Ui_MainWindow(object):
         self.toggleButton.setText(QCoreApplication.translate("MainWindow", u"Hide", None))
         self.btn_home.setText(QCoreApplication.translate("MainWindow", u"Home", None))
         self.btn_widgets.setText(QCoreApplication.translate("MainWindow", u"Widgets", None))
+        self.btn_home.setText(QCoreApplication.translate("MainWindow", u"Home", None))
+        self.btn_chat.setText(QCoreApplication.translate("MainWindow", u"Chat", None))
         self.btn_new.setText(QCoreApplication.translate("MainWindow", u"New", None))
         self.btn_save.setText(QCoreApplication.translate("MainWindow", u"Save", None))
         self.btn_exit.setText(QCoreApplication.translate("MainWindow", u"Exit", None))
